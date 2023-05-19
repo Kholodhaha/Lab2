@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->text('description');
-            $table->decimal('cost')->unsigned();
+            $table->integer('cost')->unsigned();
             $table->string('image');
             $table->integer('count')->unsigned();
         });
